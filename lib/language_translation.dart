@@ -48,6 +48,8 @@ class _LanguageTranslationPageState extends State<LanguageTranslationPage> {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 2, 185, 151),
       appBar: AppBar(
+        leading: Container(
+          child: Image.asset('assets/language.png')),
           title: const Text(
             'LANGUAGE  TRANSLATOR',
             style: TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold),
