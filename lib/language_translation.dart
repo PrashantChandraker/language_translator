@@ -72,7 +72,7 @@ class _LanguageTranslationPageState extends State<LanguageTranslationPage> {
                       originLanguage,
                       style: const TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold ),
                     ),
-                    dropdownColor: Colors.black,
+                    dropdownColor: Colors.white,
                     icon: const Icon(Icons.keyboard_arrow_down),
                     items: languages.map((String dropDownStringItem) {
                       return DropdownMenuItem(
@@ -98,7 +98,7 @@ class _LanguageTranslationPageState extends State<LanguageTranslationPage> {
                       destinationLanguage,
                       style: const TextStyle( color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
                     ),
-                    dropdownColor: Colors.black,
+                    dropdownColor: Colors.white,
                     icon: const Icon(Icons.keyboard_arrow_down),
                     items: languages.map((String dropDownStringItem) {
                       return DropdownMenuItem(
@@ -123,9 +123,13 @@ class _LanguageTranslationPageState extends State<LanguageTranslationPage> {
                   style: const TextStyle(
                     color: Colors.black,
                   ),
+                  minLines: 3,
+                  maxLines: 8,
                   decoration: const InputDecoration(
+                      alignLabelWithHint: true,
                       labelText: 'Please enter your text...',
                       labelStyle: TextStyle(
+                        
                         fontSize: 15,
                         color: Colors.black,
                       ),
